@@ -13,16 +13,16 @@ const NavBar = () => {
   const links = ["home", "destination", "crew", "technology"];
 
   return (
-    <nav className="relative px-10 lg:px-14 z-20 ">
+    <nav className="relative z-20">
       <div
-        className="fixed flex items-center justify-between w-full h-[6rem] lg:mt-10 "
+        className="fixed flex px-10 md:px-0 md:pl-10 lg:pl-14 lg:mt-10 items-center justify-between w-full h-[6rem]"
         ref={navbarRef}
       >
         <div className="relative w-10 h-10 md:w-12 md:h-12 ">
           <Image src="/assets/shared/logo.svg" alt="Space Logo" layout="fill" />
         </div>
         <div
-          className="md:hidden hover:cursor-pointer mr-16 w-6 h-6"
+          className="md:hidden hover:cursor-pointer mr-0 w-6 h-6"
           onClick={() => setShowVerticalNavBar(true)}
         >
           {showVerticalNavBar ? null : <Hamburger />}

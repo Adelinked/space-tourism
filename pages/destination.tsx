@@ -23,7 +23,7 @@ const Home: NextPage = () => {
         />
       </Head>
       <NavBar />
-      <main className="flex w-full flex-col justify-between text-center pt-20 md:pt-36 lg:pt-52 px-6 md:px-10 xl:px-40 pb-14 md:pb-16 lg:pb-32 lg:text-left">
+      <main className="flex w-full flex-col justify-between text-center pt-28 md:pt-36 lg:pt-52 px-6 md:px-10 xl:px-40 pb-14 md:pb-16 lg:pb-32 lg:text-left">
         <p className="text-lightBlue mb-8 md:mb-16 md:text-left font-subHeading2  md:text-[1.25rem] lg:text-[1.75rem] leading-[1.2rem] md:leading-[1.5rem] lg:leading-[2.1rem] tracking-[0.16rem] md:tracking-[0.21rem] lg:tracking-[0.295rem] ">
           <span className="opacity-25 number font-bold	mr-4 lg:mr-6">01</span>{" "}
           PICK YOU DESTINATION

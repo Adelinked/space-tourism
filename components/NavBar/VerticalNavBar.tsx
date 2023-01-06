@@ -23,7 +23,7 @@ const VerticalNavBar = ({
 
   return (
     <div
-      className="fixed top-0 left-[100%] verticalNavBar z-20 w-[67.73%] h-full    overflow-y-auto  "
+      className="fixed top-0 left-[100%] verticalNavBar z-20 w-[67.73%] h-full  overflow-y-auto  "
       ref={verticalNavRef}
     >
       <div
@@ -32,7 +32,7 @@ const VerticalNavBar = ({
       >
         <Close />
       </div>
-      <div className="flex flex-col justify-start items-start mt-16 w-full  md:leading-[1.0625rem] lg:leading-[1.1875rem] md:tracking-[0.1475rem] lg:tracking-[0.16875rem] px-12 lg:px-32 ">
+      <div className="flex flex-col justify-start items-start mt-16 w-full md:leading-[1.0625rem] lg:leading-[1.1875rem] md:tracking-[0.1475rem] lg:tracking-[0.16875rem] px-12 lg:px-32 ">
         <a href="/">
           <span>00</span>HOME
         </a>

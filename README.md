@@ -25,7 +25,7 @@ Users should be able to:
 
 ### Screenshot
 
-![](https://i.postimg.cc/L5kbJf3R/screen-Shot.png)
+![](https://i.postimg.cc/0Nz2NZD1/screen-Shot.png)
 
 ### Links
 
