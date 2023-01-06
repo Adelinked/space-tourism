@@ -1,0 +1,153 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+*,
+*::before,
+*::after {
+  transition: left 0.5s ease-out, color 0.5s ease-out, opacity 0.3s ease-out,
+    background-color 0.5s ease-out, transform 0.5s ease-out;
+}
+
+html {
+  box-sizing: border-box;
+  scroll-behavior: smooth;
+  height: 100%;
+}
+
+body {
+  color: white;
+  @apply bg-darkBlue;
+}
+
+.backgrounds {
+  background-origin: content-box;
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: 100% 100%;
+  mix-blend-mode: screen;
+  position: relative;
+}
+
+.navBar {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+}
+
+.verticalNavBar {
+  background: rgba(255, 255, 255, 0.04);
+  backdrop-filter: blur(40.7742px);
+}
+
+.navBar a {
+  @apply font-subHeading2;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100%;
+  margin-right: 3rem;
+  cursor: pointer;
+  position: relative;
+}
+
+.activeLink::before {
+  content: "";
+  width: 100%;
+  height: 3px;
+  background: white;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  opacity: 1;
+  visibility: visible;
+}
+.navBarLink::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  @apply bg-lightGray;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms ease-in;
+}
+.navBarLink:hover::before {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+
+.navBar span {
+  margin-right: 19px;
+  display: none;
+  font-weight: bold;
+}
+
+.verticalNavBar a {
+  display: flex;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.verticalNavBar a:hover {
+}
+.verticalNavBar span {
+  margin-right: 11px;
+  font-weight: bold;
+}
+
+.navBar a:hover {
+}
+
+.activeTab::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  background-color: white;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  width: 100%;
+}
+
+.tab::before {
+  content: "";
+  width: 0%;
+  height: 3px;
+  @apply bg-lightGray;
+  position: absolute;
+  left: 0;
+  bottom: 1px;
+  opacity: 0;
+  visibility: hidden;
+  transition: 200ms ease-in;
+}
+.tab:hover::before {
+  opacity: 1;
+  visibility: visible;
+  width: 100%;
+}
+
+@media (min-width: 1024px) {
+  .navBar span {
+    margin-right: 19px;
+    display: block;
+  }
+}
+
+.attribution {
+  @apply font-subHeading2;
+  font-size: 11px;
+  text-align: center;
+  position: absolute;
+  bottom: 2px;
+  left: calc(50% - 140px);
+  width: 280px;
+  z-index: 20;
+}
+.attribution a {
+  opacity: 50%;
+  cursor: pointer;
+}
