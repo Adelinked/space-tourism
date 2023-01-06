@@ -21,13 +21,14 @@ const NavBar = () => {
         <div className="relative w-10 h-10 md:w-12 md:h-12 ">
           <Image src="/assets/shared/logo.svg" alt="Space Logo" layout="fill" />
         </div>
+        <div className="hidden lg:block absolute h-[1px] w-[28%] left-[120px] xl:w-[473px] xl:left-[167px] z-[30] bg-white opacity-25  "></div>
         <div
-          className="md:hidden hover:cursor-pointer mr-0 w-6 h-6"
+          className="md:hidden hover:cursor-pointer w-6 h-6"
           onClick={() => setShowVerticalNavBar(true)}
         >
           {showVerticalNavBar ? null : <Hamburger />}
         </div>
-        <div className="hidden md:flex justify-between items-center navBar h-full text-sm lg:text-[1rem]  md:leading-[1.0625rem] lg:leading-[1.1875rem] md:tracking-[0.1475rem] lg:tracking-[0.16875rem] px-12 lg:px-32">
+        <div className="hidden md:flex justify-between items-center navBar h-full text-sm lg:text-[1rem] md:leading-[1.0625rem] lg:leading-[1.1875rem] md:tracking-[0.1475rem] lg:tracking-[0.16875rem] px-12 lg:px-32">
           <>
             {links.map((i: string) => (
               <a

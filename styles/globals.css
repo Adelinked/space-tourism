@@ -31,12 +31,12 @@ body {
 
 .navBar {
   background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(40.7742px);
+  backdrop-filter: blur(15.7742px);
 }
 
 .verticalNavBar {
   background: rgba(255, 255, 255, 0.04);
-  backdrop-filter: blur(40.7742px);
+  backdrop-filter: blur(15.7742px);
 }
 
 .navBar a {
