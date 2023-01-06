@@ -25,7 +25,7 @@ body {
   background-repeat: no-repeat;
   background-position: center;
   background-size: 100% 100%;
-  mix-blend-mode: screen;
+  /*mix-blend-mode: screen;*/
   position: relative;
 }
 
@@ -40,14 +40,7 @@ body {
 }
 
 .navBar a {
-  @apply font-subHeading2;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  height: 100%;
-  margin-right: 3rem;
-  cursor: pointer;
-  position: relative;
+  @apply font-subHeading2 flex items-center justify-center h-full mr-[2.3125rem] lg:mr-[3.125rem] cursor-pointer relative;
 }
 
 .activeLink::before {
@@ -77,12 +70,6 @@ body {
   opacity: 1;
   visibility: visible;
   width: 100%;
-}
-
-.navBar span {
-  margin-right: 19px;
-  display: none;
-  font-weight: bold;
 }
 
 .verticalNavBar a {
@@ -128,13 +115,6 @@ body {
   opacity: 1;
   visibility: visible;
   width: 100%;
-}
-
-@media (min-width: 1024px) {
-  .navBar span {
-    margin-right: 19px;
-    display: block;
-  }
 }
 
 .attribution {
