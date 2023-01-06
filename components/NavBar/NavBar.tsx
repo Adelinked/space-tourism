@@ -28,7 +28,7 @@ const NavBar = () => {
         >
           {showVerticalNavBar ? null : <Hamburger />}
         </div>
-        <div className="hidden md:flex justify-between items-center navBar h-full text-sm lg:text-[1rem] md:leading-[1.0625rem] lg:leading-[1.1875rem] md:tracking-[0.1475rem] lg:tracking-[0.16875rem] px-12 lg:px-32">
+        <div className="hidden md:flex justify-between items-center navBar h-full text-sm lg:text-[1rem] md:leading-[1.0625rem] lg:leading-[1.1875rem] md:tracking-[0.1475rem] lg:tracking-[0.16875rem] px-12 lg:px-[123px]">
           <>
             {links.map((i: string, index) => (
               <a
